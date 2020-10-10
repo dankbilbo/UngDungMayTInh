@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng máy tính</title>
+</head>
+<body >
+<h1><b>Calculator</b></h1>
+<input type="number" name="enterTextBox1" id="Textbox1" placeholder="0">
+<input type="number" name="enterTextBox2" id="Textbox2" placeholder="0"r>
+<br>
+<br>
+<button onclick="Addition()" id="addition" value="clicked">Addition(+)</button>
+<button onclick="Subtraction()" id="subtraction" value="clicked">Subtraction(-)</button>
+<button onclick="Multiplication()" id="multiplication" value="clicked">Multiplication(X)</button>
+<button onclick="Division()" id="division" value="clicked">Division(/)</button>
+<!--<button onclick="calculate()" id="equal">=</button>-->
+<br><br>
+<script>
+    function Addition()
+    {
+        let a = +document.getElementById("Textbox1").value;
+        let b = +document.getElementById("Textbox2").value;
+        result = a + b;
+        document.getElementById("1").innerHTML = result;
+
+    }
+    function Subtraction()
+    {
+        let a = +document.getElementById("Textbox1").value;
+        let b = +document.getElementById("Textbox2").value;
+        result = a - b;
+        document.getElementById("1").innerHTML = result;
+    }
+    function Multiplication()
+    {
+        let a = +document.getElementById("Textbox1").value;
+        let b = +document.getElementById("Textbox2").value;
+        result = a * b;
+        document.getElementById("1").innerHTML = result;
+    }
+    function Division()
+    {
+        let a = +(document.getElementById("Textbox1").value);
+        let b = +document.getElementById("Textbox2").value;
+        result = a / b;
+        document.getElementById("1").innerHTML = result;
+    }
+
+</script>
+<p id="1">123</p>
+</body>
+</html>
